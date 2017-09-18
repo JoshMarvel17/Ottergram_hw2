@@ -39,8 +39,9 @@ function addThumbClickHandler(thumb) {
     event.preventDefault();
     setDetailsFromThumb(thumb);
     if (imageFromThumb(thumb) == 'img/tacocat.jpg') {
-      location.reload();
-
+        setTimeout(function() {
+         location.reload(1);
+        }, 2000);
     }
 
   });
