@@ -38,6 +38,8 @@ function addThumbClickHandler(thumb) {
   thumb.addEventListener('click', function(event) {
     event.preventDefault();
     setDetailsFromThumb(thumb);
+    
+    //if the data image url from one of the otters clicked is tacocat, reload the page randomly placing tacocat in one of the thumbnails
     if (imageFromThumb(thumb) == 'img/tacocat.jpg') {
         setTimeout(function() {
          location.reload(1);
